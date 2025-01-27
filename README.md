@@ -16,3 +16,6 @@ Model has following fields:
 - name
 - email -> unique, should have valid email format
 - phone -> unique
+
+# Day-3
+Day-3 Folder contains a basic project using Express. I have implemented req.params, req.query, and regular expression in dynamic routing.To implement this i have used Employee model.
