@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title Employee By Email
+    body
+        - var isData = employee != null;  // Ensure employee data exists
+        h1 Employee Details with email: #{email}
+        if isData
+            // Display employee details
+            h2 Employee Id = #{employee.emp_id || 'Not Available'}
+            p First Name = #{employee.first_name || 'Not Available'}
+            p Last Name = #{employee.last_name || 'Not Available'}
+            p Email = #{employee.email || 'Not Available'}
+            p Gender = #{employee.gender || 'Not Available'}
+            p City = #{employee.city || 'Not Available'}
+            p State = #{employee.state || 'Not Available'}
+            p Salary = #{employee.salary || 'Not Available'}
+            p Designation = #{employee.designation || 'Not Available'}
+            p Joining Date = #{employee.date_of_joining ? employee.date_of_joining.toLocaleDateString() : 'Not Available'}
+            p Contact Number = #{employee.phone || 'Not Available'}
+        else
+            h1 No Data found

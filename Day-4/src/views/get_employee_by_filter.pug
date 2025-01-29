@@ -1,0 +1,28 @@
+doctype html
+html
+    title Employee by Filter
+    body
+        h1.filter Filter{
+        ul
+            each value, key in filters
+                li(type="none") #{key}: #{value},
+        h1 }
+        - var isData = employees && employees.length > 0;
+        if isData
+            - var count = 0
+            each data in employees
+                - count++
+                h1#email #{count}. #{data.email}
+                p Employee Id = #{data.emp_id || 'Not Available'}
+                p First Name = #{data.first_name || 'Not Available'}
+                p Last Name = #{data.last_name || 'Not Available'}
+                p Email = #{data.email || 'Not Available'}
+                p Gender = #{data.gender || 'Not Available'}
+                p City = #{data.city || 'Not Available'}
+                p State = #{data.state || 'Not Available'}
+                p Salary = #{data.salary || 'Not Available'}
+                p Designation = #{data.designation || 'Not Available'}
+                p Joining Date = #{data.date_of_joining || 'Not Available'}
+                p Contact Number = #{data.phone || 'Not Available'}
+        else
+            h1 No Data found
