@@ -1,4 +1,4 @@
-# Employee CRUD
+# User CRUD
 
 Implemented JWT authentication, Middleware on a small project where user can signup using email and password. Then they can login using their email and password. 
 Once the user is logged in they get a JWT token which has userId. If the token passed in header has the valid token then it will pass an userId to next method where user can fill their details and can even view their data using get route.
