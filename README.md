@@ -17,5 +17,17 @@ Model has following fields:
 - email -> unique, should have valid email format
 - phone -> unique
 
+<<<<<<< Updated upstream
 # Day-3
 Day-3 Folder contains a basic project using Express. I have implemented req.params, req.query, and regular expression in dynamic routing.To implement this i have used Employee model.
+=======
+
+# Day-3
+Day-3 Folder contains the Employee CRUD in which i have learned and implemented following concepts:
+- req.paras
+- req.query
+- regular expression in dynamic routing
+
+# Day-4
+In Day-4 Folder i have implemented the middleware to log the request details in log file. To serve the static file use of express middleware. Also implemented pug templating engine to show the get response on the webpage.
+>>>>>>> Stashed changes
